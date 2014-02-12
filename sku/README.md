@@ -25,3 +25,9 @@ maven exec:java -Dexec.mainClass=zappos.sku.ImageApp -Dexec.args="skus.txt"
 The instructions provided indicate that 4 images should be returned.
 However, I was only able to retrieve 3 images. I checked the JSON
 response and found that on SKU 7860495, defaultImageUrl is set to null.
+
+There are some minor improvements that could be made given more time.
+The SKU input file could be streamed, rather than read in all at once.
+Multiple threads could be used to retrieve and save the images in parallel
+rather than serially. Both of these steps could be put together with
+the use of thread pools.
