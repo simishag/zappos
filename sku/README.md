@@ -31,3 +31,5 @@ The SKU input file could be streamed, rather than read in all at once.
 Multiple threads could be used to retrieve and save the images in parallel
 rather than serially. Both of these steps could be put together with
 the use of thread pools.
+
+Test 1
